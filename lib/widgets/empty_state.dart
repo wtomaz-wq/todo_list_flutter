@@ -6,15 +6,15 @@ class EmptyState extends StatelessWidget {
   const EmptyState({
     super.key,
     this.message =
-     'Você não possui tarefas.\nAdicione uma tarefa para começar.'
+        'Você não possui tarefas.\nAdicione uma tarefa para começar.',
   });
 
   @override
-  Widget build(BuildContext context){
-final ColorScheme = Theme.of(context).colorScheme;
-final textTheme = Theme.of(context).textTheme;
+  Widget build(BuildContext context) {
+    final ColorScheme = Theme.of(context).colorScheme;
+    final textTheme = Theme.of(context).textTheme;
 
-  return Padding(
+    return Padding(
       padding: const EdgeInsets.all(32),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -23,14 +23,11 @@ final textTheme = Theme.of(context).textTheme;
             Icons.check_circle_outline,
             size: 72,
             color: ColorScheme.primary,
-
           ),
           const SizedBox(height: 16),
           Text(
             'Tudo Organizado!',
-            style: textTheme.titleLarge?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+            style: textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
           Text(
@@ -39,9 +36,9 @@ final textTheme = Theme.of(context).textTheme;
             style: textTheme.bodyMedium?.copyWith(
               color: ColorScheme.onSurfaceVariant,
             ),
-          )
+          ),
         ],
-      )
+      ),
     );
   }
 }
