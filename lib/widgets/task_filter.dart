@@ -36,4 +36,4 @@ class TaskFilter extends StatelessWidget {
       onSelected: (_) => onChanged(value),
     );
   }
-} // Fechamento correto da classe TaskFilter
+} 
