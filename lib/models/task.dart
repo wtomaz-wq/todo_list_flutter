@@ -42,6 +42,6 @@ String formatShortDate(DateTime date) {
   return '$day/$month/${date.year}';
 }
 
-DateTime dateonly(DateTime date) {
+DateTime dateOnly(DateTime date) {
   return DateTime(date.day, date.month, date.year);
 }
